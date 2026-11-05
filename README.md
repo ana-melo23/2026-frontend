@@ -1,2 +1,2 @@
 # 2026-frontend
-projetos web do técnico de informática
+projetos web do técnico de informática para internet
