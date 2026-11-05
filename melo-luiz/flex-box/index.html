@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box></title>
+    <style>
+        h1{ 
+            color: rgb(185, 110, 18);
+        }
+        body{
+            font-family: sans-serif;
+            background-color: rgb(169, 169, 179);
+         }
+         .elementoFilho{
+            background-color: white;
+            /*espaçamento interno*/
+            padding:15px ;
+            text-align: center;
+            border-radius: 10px;
+            /* largura maxima */
+            max-width: 300px;
+         }
+        .elementoFilho img{ 
+            width: 100%;
+            border-radius: 6px;
+         }
+        .elementoPai{
+            display: flex;
+            /* define a direção dos elmentos - direita, esquerda*/
+            flex-direction: row;
+            /*gerar quebra de linha automática*/
+            flex-wrap: wrap;
+            /*definir espaçamentos*/
+            gap: 20px;
+            /*centralizar esquerda direita*/
+            justify-content: center;
+            /*centralizar acima abaixo*/
+            align-items: center;
+            height: 100vh;
+         }
+         .preco{
+            color: rgb(110, 202, 18);
+            font-weight: bold;
+         } 
+         button{
+            background-color: rgb(58, 114, 6);
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 2px 2px 9px;
+         }
+         button:hover{
+            background-color: black;
+            scale: 1.2;
+            transition: 1s;
+            cursor: pointer;
+         }
+
+        </style>
+
+</head>
+<body>
+    <h1> flex-box</h1>
+    <h3 style="color: rgb(23, 24, 24);"> alinhamento </h3>
+
+     <div class="elementoPai">
+
+        <div class="elementoFilho">
+         <img src="https://cdn.autopapo.com.br/box/uploads/2020/09/11110851/frente-do-fiat-argo-2021-hgt-vermelho-732x488.jpeg">
+         <h4> Fiat Argo</h4>
+         <p> 2022- flex - 40.000km </p>
+         <p class="preco"> 70.000</p>
+         <button> Comprar</button>
+        </div>
+
+         <div class="elementoFilho">
+         <img src="https://www.webmotors.com.br/imagens/prod/379551/TOYOTA_HILUX_2.8_D4D_TURBO_DIESEL_CD_SRX_PLUS_4X4_AUTOMATICO_37955116371144245.webp">
+         <h4> Toyota HILUX</h4>
+         <p> 2025- flex - 500.000km </p>
+         <p class="preco"> 350.000</p>
+         <button> Comprar</button>
+        </div>
+         
+        <div class="elementoFilho">
+         <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/WXKUJUZWDROKPDGN5YMDHYYGDI.jpg">
+         <h4> porsche 911</h4>
+         <p> 2025- flex - 294.000km </p>
+         <p class="preco"> 800.000</p>
+         <button> Comprar</button>
+        </div>
+        
+         <div class="elementoFilho">
+         <img src="https://s2-autoesporte.glbimg.com/VfspWjFKImFh4IhkgbJZtAFDS84=/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2024/o/Z/Q6kCwpSta5YUogzY95ug/2024-honda-civic-rs-prototype-1-1536x1024.webp">
+         <h4> Honda Civic</h4>
+         <p> 2021- flex - 15.000km </p>
+         <p class="preco"> 149.480</p>
+         <button> Comprar</button>
+        </div>
+        
+         <div class="elementoFilho">
+         <img src="https://motorshow.com.br/wp-content/uploads/sites/2/2025/09/1-0-2026-1754665389-4359.jpg">
+         <h4> Chevrolet Onix</h4>
+         <p> 2026- flex - 13.900km </p>
+         <p class="preco"> 133.990</p>
+         <button> Comprar</button>
+        </div>
+        
+
+    </div>
+</body>
+</html>

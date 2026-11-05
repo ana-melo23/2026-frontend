@@ -1,0 +1,62 @@
+.quadrado{ 
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 150px;
+    background-color: rgba(3, 43, 3, 0.411);
+}
+body{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* background-color: rgb(172, 240, 240);*/
+    background-image: url(https://img.magnific.com/free-vector/flat-green-checkered-background_23-2150551838.jpg?semt=ais_hybrid&w=740&q=80);
+    background-size: cover;
+}
+.painel{ 
+    width: 800px;
+    border: 1px solid cornflowerblue;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(4, 44, 1, 0.274);
+    color: rgb(85, 110, 82);
+    font-family:  "Fontdiner Swanky", serif;
+}
+.jogo{ 
+    margin: auto;
+ }
+ td{
+    border: solid 9px white;
+    border-radius: 30px;
+}
+.quadrado:hover{ 
+    box-shadow: inset 1px 1px 50px white;
+}
+
+.botão{ 
+    background-color: rgba(85, 107, 47, 0.705);
+    font-size: 20px;
+    color: rgb(215, 221, 226);
+    margin: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.botão:hover{ 
+    background-color: rgb(14, 15, 14);
+    color: rgb(179, 177, 168);
+    text-shadow: inset 1px 1px 50px;
+    box-shadow: inset 1px 1px 50px;
+    border-radius: 100px;
+}
+
+@media(max-width: 760px){ 
+    .quadrado{ 
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+    }
+    body{ 
+        background-size: auto;
+        margin-top: 100px;
+    }
+}
